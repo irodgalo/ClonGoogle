@@ -1,0 +1,175 @@
+body{
+    margin: 0px; /*margen pa' dentro*/
+    padding: 0; /**/
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-color: darksalmon;
+    width: 100%;
+    height: 5%;
+}
+
+header nav {
+    background-color: lightsteelblue;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav .nav-right-section {
+    background-color: grey;
+    width: 250px;
+    list-style: none;/*Eliminar puntitos de la lista de items Gmail, imágenes y asi*/
+    display: flex; /*Le da flexibilidad a nuestra lista*/
+    justify-content: center; /*Centramos horizontalmente los elementos de la lista*/
+    align-items: center; /*Centramos verticalmente la lista*/
+}
+
+a{
+    /*Elimina la línea de adeabajo*/
+    text-decoration: none;
+}
+
+nav .nav-right-section a{
+    color: rgb(21, 21, 21);
+    margin-right: 20px; /*Aquí estoy posicionando mi cajita de la lista en relación con lo demás*/
+}
+
+nav .nav-right-section .menu {
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    width: 20px;
+    height: 20px;
+    background-size: contain;/*Modifica el tamaño de la imagen al tamaño del contenedor*/
+    background-repeat: no-repeat; /*Para eliminar la repetición dle elemento (a veces no pasa y a veces sí)*/
+}
+
+nav .nav-right-section img {
+    border-radius: 30px; /*Separa el menú de la imagen*/
+    margin-left: 20px;
+    width: 35px;
+}
+
+/*Main///////////////////////////////////////////////////////////////////////////////////*/
+
+/*________________________________________________________________________
+LOGO
+_______________________________________________________________________________*/
+main {
+    background-color: darkkhaki;
+    margin-top: 130px;
+    text-align: center;
+}
+
+main .main-logo {
+    background-color: goldenrod;
+    width: 530px;
+    margin: 0 auto; /*pone como cero el margen de arriba y abajo, el auto setea en automático brdes de izquierda y derecha poniendolo al centro*/
+    margin-bottom: 40px;
+}
+
+main .main-logo img {
+    height: 120px;
+
+}
+
+/*____________________________________________________________________________________
+INPUT
+_______________________________________________________________________________*/
+
+main .main-input {
+    background-color: lavenderblush;
+    width: 550px;
+    background-color: darkgreen;
+    margin: 0 auto;
+    margin-bottom: 40px; /*Separación entre buscador y botones*/
+
+}
+
+/*Caja con borde redondeado*/
+main .main-input-container {
+    border: 1px solid #dfe1e5; /*pide tres valores: anchura de linea, estilo y color*/
+    background-color: lightskyblue;
+    border-radius: 20px;
+    width: 525px;
+    background-color: rgb(171, 120, 206);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-input input{
+    height: 35px;
+    border: none;
+    outline: none; /*quita el borde cuando seleccionas el elemento*/
+    width: 430px;
+    background-color: chocolate;
+}
+
+main .main-input .search-icon {
+    background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+    /*la caja delimputo cubre todo asi ponemos background size*/
+    background-size: contain;
+    padding-left: 6%;
+    background-repeat: no-repeat; /*Para que no se repita hasta llenar el espacio*/
+    background-position: center;
+    height: 15px;
+    width: 15px;
+}
+
+main .main-input .micro-icon {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    height: 17px;
+    width: 17px;
+    background-size: contain;
+    background-position: center;
+    padding-left: 1%;
+    background-repeat: no-repeat;
+}
+
+main .main-input .cam-icon {
+    background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg);
+    background-position: center;
+    background-size: contain;
+    width: 17px;
+    height: 17px;
+    background-repeat: no-repeat;
+    padding-right: 5%;
+
+}
+
+/*BOTONES*/
+main .main-buttons{
+    background-color: blueviolet;
+    width: 550px;
+    margin: 0 auto;
+}
+
+main .main-buttons div{
+    display: inline-block;/*hace que las cajitas esten una a lado de la otra en vez de una encima de la otra, en la misma línea*/
+}
+
+main .main-buttons button{
+    background-color: #f8f9fa;
+    border: none;
+    height: 30;
+    font-size: 16px;
+    color: #3c4043;
+    padding: 0 15px;
+    border-radius: 4px;
+    margin right: 10px;
+}
+
+
+/*Esto es para que cuando pase el mause encima de botones o el buscador se genere la sombra que hace la página original*/
+main .main-input-container:hover{
+    box-shadow: 0px 0px 5px #20212447; /*x, y, radio, color*/
+}
+
+/*Ahora haremos lo mismo para los botones*/
+
+main .main-buttons button:hover{ /*El hover los puntitos y el button van SIEMPRE juntitos porque sino se nortea y ya no sabe a que aplicarlo :v*/
+    color: #202124;
+    border: 1px solid #dadce0;
+    box-shadow: 0 1px 2px #20212447;
+
+}
