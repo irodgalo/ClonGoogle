@@ -5,23 +5,20 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 header{
-    background-color: darksalmon;
     width: 100%;
     height: 5%;
 }
 
 header nav {
-    background-color: lightsteelblue;
     display: flex;
     justify-content: flex-end;
 }
 
 header nav .nav-right-section {
-    background-color: grey;
     width: 250px;
     list-style: none;/*Eliminar puntitos de la lista de items Gmail, imágenes y asi*/
     display: flex; /*Le da flexibilidad a nuestra lista*/
-    justify-content: center; /*Centramos horizontalmente los elementos de la lista*/
+    justify-content:flex-end; /*Centramos horizontalmente los elementos de la lista*/
     align-items: center; /*Centramos verticalmente la lista*/
 }
 
@@ -32,13 +29,13 @@ a{
 
 nav .nav-right-section a{
     color: rgb(21, 21, 21);
-    margin-right: 20px; /*Aquí estoy posicionando mi cajita de la lista en relación con lo demás*/
+    margin-right: 16px; /*Aquí estoy posicionando mi cajita de la lista en relación con lo demás*/
 }
 
 nav .nav-right-section .menu {
     background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
-    width: 20px;
-    height: 20px;
+    width: 23px;
+    height: 23px;
     background-size: contain;/*Modifica el tamaño de la imagen al tamaño del contenedor*/
     background-repeat: no-repeat; /*Para eliminar la repetición dle elemento (a veces no pasa y a veces sí)*/
 }
@@ -46,7 +43,7 @@ nav .nav-right-section .menu {
 nav .nav-right-section img {
     border-radius: 30px; /*Separa el menú de la imagen*/
     margin-left: 20px;
-    width: 35px;
+    width: 32px;
 }
 
 /*Main///////////////////////////////////////////////////////////////////////////////////*/
@@ -55,20 +52,19 @@ nav .nav-right-section img {
 LOGO
 _______________________________________________________________________________*/
 main {
-    background-color: darkkhaki;
-    margin-top: 130px;
     text-align: center;
+    padding-top: 132px;
+
 }
 
 main .main-logo {
-    background-color: goldenrod;
     width: 530px;
     margin: 0 auto; /*pone como cero el margen de arriba y abajo, el auto setea en automático brdes de izquierda y derecha poniendolo al centro*/
-    margin-bottom: 40px;
+    padding-bottom: 33px;
 }
 
 main .main-logo img {
-    height: 120px;
+    height: 92px;
 
 }
 
@@ -77,43 +73,40 @@ INPUT
 _______________________________________________________________________________*/
 
 main .main-input {
-    background-color: lavenderblush;
-    width: 550px;
-    background-color: darkgreen;
+    width: 585px;
     margin: 0 auto;
-    margin-bottom: 40px; /*Separación entre buscador y botones*/
+    margin-bottom: 20px; /*Separación entre buscador y botones*/
 
 }
 
 /*Caja con borde redondeado*/
 main .main-input-container {
     border: 1px solid #dfe1e5; /*pide tres valores: anchura de linea, estilo y color*/
-    background-color: lightskyblue;
-    border-radius: 20px;
-    width: 525px;
-    background-color: rgb(171, 120, 206);
+    border-radius: 30px;
+    width: 650;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 main .main-input input{
-    height: 35px;
+    height: 45px;
     border: none;
     outline: none; /*quita el borde cuando seleccionas el elemento*/
     width: 430px;
-    background-color: chocolate;
+    padding-right: 30px;
 }
 
 main .main-input .search-icon {
     background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
     /*la caja delimputo cubre todo asi ponemos background size*/
     background-size: contain;
-    padding-left: 6%;
+    padding-left: 5%;
     background-repeat: no-repeat; /*Para que no se repita hasta llenar el espacio*/
-    background-position: center;
-    height: 15px;
-    width: 15px;
+    background-position: left;
+    height: 13px;
+    width: 13px;
 }
 
 main .main-input .micro-icon {
@@ -139,24 +132,26 @@ main .main-input .cam-icon {
 
 /*BOTONES*/
 main .main-buttons{
-    background-color: blueviolet;
+    
     width: 550px;
     margin: 0 auto;
 }
 
 main .main-buttons div{
     display: inline-block;/*hace que las cajitas esten una a lado de la otra en vez de una encima de la otra, en la misma línea*/
+    padding-left: 7px;
 }
 
 main .main-buttons button{
     background-color: #f8f9fa;
     border: none;
-    height: 30;
-    font-size: 16px;
+    height: 35px;
+    font-size: 14px;
     color: #3c4043;
-    padding: 0 15px;
+    padding: 0 20px;
     border-radius: 4px;
     margin right: 10px;
+
 }
 
 
@@ -171,5 +166,50 @@ main .main-buttons button:hover{ /*El hover los puntitos y el button van SIEMPRE
     color: #202124;
     border: 1px solid #dadce0;
     box-shadow: 0 1px 2px #20212447;
+}
 
+a:visited {
+    text-decoration: none;
+    color:#737b80;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background: #f2f2f2;
+    width: 100%;
+    position: absolute;  /*Esta me pone el footer hasta abajo, solo funciona para poco contenido, no más que un "pantallazo"*/
+    bottom: 0;
+    
+}
+
+hr{
+    border-color: #dcdcdc;
+    border-style: solid; /*Poner esto para que la linea cambie de color sino nomás no cambia unu*/
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+.doslistas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 2%;
+    margin-left: 0px;
+
+}
+
+.pais{
+    margin-left: 2%;
+    font-size: 15px;
+    color:#737b80;
+}
+
+li{
+    padding-right:30px;
 }
